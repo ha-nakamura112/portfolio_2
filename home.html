@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+<body>
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Haruka Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portfolio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#career">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <section>
+      <article>
+        <h1 class="animate__animated animate__jackInTheBox">Haruka Nakamura</h1>
+        <p class="animate__animated animate__jackInTheBox animate__delay-1s">web developer / web marketer</p>
+        <ul>
+          <li><a class="fa-brands fa-facebook animate__animated animate__bounce" href="#"></a></li>
+          <li><a class="fa-solid fa-at" href="mailto:nh.3213.b.b@gmail.com"></a></li>
+          <li><a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/nakamura-haruka-70371b240/"></a></li>
+          <li><a class="fa-brands fa-github" href="https://github.com/ha-nakamura112"></a></li>
+          <li><a href="./resume.pdf" download="./resume.pdf">resume</a></li>
+        </ul>
+      </article>
+      <figure>
+        <img src="./img/profile.jpg" alt="profile">
+      </figure>
+    </section>
+  </header>
+  <nav class="navbar fixed-bottom bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-space-awesome"></i>Back to Top</a>
+    </div>
+  </nav>
+  <main>
+    <section class="about">
+      <div class="title">
+        <h1>personal detail</h1>
+        <h6></h6>
+      </div>
+      <section>
+        <h2>Web developer & marketer</h2>
+        <p>Web developer with ability to learn and collaborate in rapidly changing environments. Worked through 1000+ hours of some types of structure, learning HTML, CSS, PHP, react, Node.js, JavaScript, and Python.</p>
+      </section>
+    </section>
+    <section class="skills" id="skills">
+      <div class="title">
+        <h1>Skills</h1>
+        <h6></h6>
+      </div>
+      <section>
+        <aside>
+          <i class="fa-solid fa-laptop-code animate__animated animate__zoomIn fadein"></i>
+          <h3>Web Development</h3>
+          <p>
+            Skilled in conceptualizing , designing, development, and deploying software containing logical and mathematical ability.
+          </p>
+        </aside>
+        <aside>
+          <i class="fa-solid fa-chart-simple animate__animated animate__zoomIn fadein"></i>
+          <h3>Digital Marketing</h3>
+          <h4>Fundamentals of digital marketing</h4>
+          <p>
+            Studied about basic digital marketing to make more efficient and userkind website.
+          </p>
+        </aside>
+      </section>
+<script>
+  $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+      var position = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+        if (scroll > position - windowHeight + 200){
+          $(this).addClass('active');
+        }
+      });
+    });
+  });
+</script>
+      <article>
+        <div class="lang">
+          <p>
+            <span>HTML5 / CSS</span>
+            <span>90%</span>
+            <i class="fa-brands fa-html5"></i>
+          </p>
+        </div>
+        <div class="lang">
+          <p>
+            <span>PHP</span>
+            <span>70%</span>
+            <i class="fa-brands fa-php"></i>
+          </p>
+        </div>
+        <div class="lang">
+          <p>
+            <span>react</span>
+            <span>50%</span>
+            <i class="fa-brands fa-react"></i>
+          </p>
+        </div>
+        <div class="lang">
+          <p>
+            <span>JavaScript</span>
+            <span>70%</span>
+            <i class="fa-brands fa-js"></i>
+          </p>
+        </div>
+        <div class="lang">
+          <p>
+            <span>Node.js</span>
+            <span>40%</span>
+            <i class="fa-brands fa-node-js"></i>
+          </p>
+        </div>
+      </article>
+    </section>
+    <section class="career">
+      <div class="title">
+        <h1>My Career</h1>
+        <h6></h6>
+      </div>
+      <article>
+        <section class="education">
+          <div class="subtitle">
+            <p>Education</p>
+          </div>
+          <article>
+            <aside>
+              <time>2016-2021</time>
+            </aside>
+            <h3>Kobe university</h3>
+            <p>Python</p>
+          </article>
+          <article>
+            <aside>
+              <time>2022</time>
+            </aside>
+           <h3>Google Online Course</h3>
+            <p>Fundamentals of digital marketing</p>
+          </article>
+          <article>
+            <aside>
+              <time>2022</time>
+            </aside>
+            <h3>Tamwood Career</h3>
+            <p>Web development</p>
+          </article>
+        </section>
+        <section class="education">
+          <div class="subtitle">
+            <p>Work exerience</p>
+          </div>
+          <article>
+            <aside>
+              <time>2020-2021</time>
+            </aside>
+            <h3>Sales person</h3>
+            <p>Try Group</p>
+          </article>
+        </section>
+      </article>
+    </section>
+    <section class="project">
+      <div class="title">
+        <h1>Project</h1>
+        <h6></h6>
+      </div>
+      <article>
+        <form>
+          <input type="button" class="btnshine" onclick="sampleimg1()" value="HTML">
+          <input type="button" onclick="sampleimg2()" value="SCSS">
+          <input type="button" onclick="sampleimg3()" value="react">
+        </form>
+        <figure>
+          <a href="#"><img id="image_file" /></a>
+        </figure>
+        <aside>
+          <p>see more projects . . .</p>
+          <a  href="https://github.com/ha-nakamura112"><i class="fa-brands fa-github"></i> click Me!</a>
+        </aside>   
+      </article>
+    </section>
+    <section class="contact">
+      <h1>GET IN TOUCH</h1>
+      <article>
+        <section>
+          <h4>My address</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i><a href="#">468 Union street</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:2368333299">+1 236 833 3299</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:bknb1102@icloud.com">bknb1102@icloud.com</a></li>
+          </ul>
+        </section>
+        <form method="POST">
+          <h4>Send a message..</h4>
+          <input type="text" name="name" placeholder="Your name">
+          <input type="email" name="email" placeholder="Your email">
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; Allright reserved.Design Haruka Nakamura
+    </p>
+  </footer>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="jquery.inview.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
