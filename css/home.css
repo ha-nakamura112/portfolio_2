@@ -167,6 +167,7 @@ img {
   }
 
   .about p{
+    width: 90%;
     text-align: center;
     line-height: 1.5;
     word-spacing: 1.5;
@@ -316,7 +317,7 @@ img {
     align-items: center;
     justify-content: center;
     color: rgb(116, 172, 32);
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .education {
@@ -458,7 +459,7 @@ img {
 
   .contact input {
     width: 20vh;
-    height: 3vh;
+    height: 5vh;
     background-color: transparent;
     border:0px none transparent;
     border-bottom: 1px solid white;
@@ -472,6 +473,7 @@ img {
 
   .contact [type=submit]{
     width: 30%;
+    text-align: center;
   }
 
   ::placeholder{
