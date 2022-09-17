@@ -392,6 +392,10 @@ img {
     color: white
   }
 
+  .contact h1 {
+    padding-top: 5%;
+  }
+
   .contact > article{
     display: flex;
     column-gap: 1vh;
