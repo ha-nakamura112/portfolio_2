@@ -188,6 +188,7 @@ img {
 
   .skills section {
     row-gap: 3vh;
+    background-image: url("./img/company2.jpg");
   }
 
   .skills aside {
@@ -218,16 +219,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap:3vh
-  }
-
-  .fadein {
-    opacity : 0;
-    transition : all 1s;
-  }
-   
-  .fadein.active{
-    opacity : 1;
-    animation-fill-mode: forwards;
   }
 
   /* skill-language */
