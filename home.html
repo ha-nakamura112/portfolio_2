@@ -48,6 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-item" href="./resume.pdf" download="./resume.pdf">resume</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -59,11 +62,11 @@
         <h1 class="animate__animated animate__jackInTheBox">Haruka Nakamura</h1>
         <p class="animate__animated animate__jackInTheBox animate__delay-1s">web developer / web marketer</p>
         <ul>
-          <li><a class="fa-brands fa-facebook animate__animated animate__bounce" href="#"></a></li>
+          <li><a class="fa-brands fa-facebook" href="#"></a></li>
           <li><a class="fa-solid fa-at" href="mailto:nh.3213.b.b@gmail.com"></a></li>
           <li><a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/nakamura-haruka-70371b240/"></a></li>
           <li><a class="fa-brands fa-github" href="https://github.com/ha-nakamura112"></a></li>
-          <li><a href="./resume.pdf" download="./resume.pdf">resume</a></li>
+          <li><a class="animate__animated animate__bounce animate__delay-2s" href="./resume.pdf" download="./resume.pdf">resume</a></li>
         </ul>
       </article>
       <figure>
@@ -215,11 +218,11 @@
       <article>
         <form>
           <input type="button" class="btnshine" onclick="sampleimg1()" value="HTML">
-          <input type="button" onclick="sampleimg2()" value="SCSS">
-          <input type="button" onclick="sampleimg3()" value="react">
+          <input type="button" onclick="sampleimg2()" value="CSS">
+          <input type="button" onclick="sampleimg3()" value="SCSS">
         </form>
         <figure>
-          <a href="#"><img id="image_file" /></a>
+          <a id="image_tag"><img id="image_file"/></a>
         </figure>
         <aside>
           <p>see more projects . . .</p>
@@ -240,7 +243,7 @@
         </section>
         <form method="POST">
           <h4>Send a message..</h4>
-          <input type="text" name="name" placeholder="Your name">
+          <input type="text" name="name" id="name" placeholder="Your name" >
           <input type="email" name="email" placeholder="Your email">
           <textarea placeholder="Message"></textarea>
           <button type="submit">Send</button>

@@ -111,6 +111,11 @@ img {
     border:0px none transparent;
     padding: 0 ;
   } 
+
+  .nav-item {
+    text-decoration: none;
+    color: gray;
+  }
   
 /* bottom nav */
   .fixed-bottom {
@@ -190,12 +195,21 @@ img {
     row-gap: 5px;
   }
 
+  .skills aside h4 {
+    width: 100%;
+    text-align: center;
+  }
+
   .skills aside i{
     font-size: 28px;
   }
 
   .skills aside p{
     text-align: center;
+    width: 75%;
+  }
+
+  .skills aside p:first-child{
     width: 70%;
   }
 
@@ -362,22 +376,20 @@ img {
 
   .project article input{
     padding: 10px;
+    color: #333;
     font-weight: bold;
+    background: transparent;
+    border: 3px solid #333;
+    border-radius: 1px;
     cursor :pointer;
   }
 
    .project article input:hover {
-    background-color:black;
-    color: white;
-    transition-delay:.1s
+    color:rgba(178, 34, 34,.8);    border-color: rgba(178, 34, 34,.8);
+    transition-delay:.1s;
+    transition: .4s;
+    border-radius: 6px;
   } 
-
-
-  .project aside {
-    display: flex;
-    align-items: center;
-    column-gap: 1vh;
-  }
 
   .project aside a{
     font-family:'Josefin Sans', sans-serif ;
@@ -388,8 +400,9 @@ img {
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 35vh;
-    color: white
+    height: 45vh;
+    color: white;
+    padding-bottom: 2%;
   }
 
   .contact h1 {
@@ -747,7 +760,7 @@ img {
   /* contact */
 
   .contact {
-    height: 50vh;
+    height: 65vh;
   }
   .contact h4 {
     font-size: 32px;
@@ -771,13 +784,17 @@ img {
   }
 
   .contact input {
-    height: 4vh;
+    height: 5vh;
     width: 40vh;
   }
 
   .contact textarea {
-    height: 8vh;
+    height: 10vh;
   } 
+
+  .contact [type=submit]{
+    height: 5vh;
+  }
 
   ::placeholder {
     font-size: 22px;
